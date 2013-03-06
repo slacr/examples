@@ -1,0 +1,4 @@
+/*
+ * Parallelized Game of Life
+ */
+

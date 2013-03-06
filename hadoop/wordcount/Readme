@@ -1,0 +1,16 @@
+This is the canonical word count example for Hadoop. A copy of The Iliad is
+provided for testing.
+
+http://slacr.evergreen.edu/wiki/index.php/MapReduce_Counting_Words
+
+Compiling:
+javac -cp /usr/share/hadoop/hadoop-core* -d classfiles WordCount.java
+jar cf wordcount.jar -C classfiles/ .
+
+Running:
+(As a hadoop user)
+(First set up your input)
+hadoop fs -mkdir wordcount wordcount/input
+hadoop fs -put iliad_pope.txt wordcount/input
+(Now run it)
+hadoop jar wordcount.jar org.slacr.WordCount wordcount/input wordcount/output

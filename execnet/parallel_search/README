@@ -1,0 +1,5 @@
+A parallel search example.
+
+Simply loops over an unsorted list, finding matched elements... but in parallel!
+
+See: http://slacr.evergreen.edu/wiki/index.php/Execnet_Parallel_Search
